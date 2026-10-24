@@ -337,22 +337,7 @@ const db = firebase.firestore();
 const sessionsCol = db.collection('sessions');
 
 // ── SÉANCE À IMPORTER (null = rien) ──────────────────────────────────────────
-const PENDING_IMPORT = {
-  type: 'A',
-  date: '2026-10-24',
-  exos: [
-    'Tractions — 6×8',
-    'Tirage vertical — 4×10',
-    'Tirage horizontal — 4×10',
-    'Row unilatéral — 3×12 @ 25kg',
-    'Curl corde — 4×12',
-    'Curl marteau — 3×12 @ 15kg',
-    'Curl excentrique — 3×10 @ 6kg',
-    'Isométrique 90° — 3×45s @ 8kg',
-    'Pronation/Supination — 3×15'
-  ],
-  notes: '1ère séance nouveau programme A/B ✓ — léger balancier curl marteau, tirage vertical à remplacer'
-};
+const PENDING_IMPORT = null; // séance A 2026-10-24 insérée ✓
 
 // ── PLANNING SEMAINE ──────────────────────────────────────────────────────────
 const WEEK_PLAN = [
