@@ -335,7 +335,20 @@ const db = firebase.firestore();
 const sessionsCol = db.collection('sessions');
 
 // ── SÉANCE À IMPORTER (null = rien) ──────────────────────────────────────────
-const PENDING_IMPORT = null; // séance A 2026-10-24 insérée ✓
+const PENDING_IMPORT = {
+  type: 'B',
+  date: '2026-10-26',
+  exos: [
+    "DC haltères plat — 32 kg : 10 / 10 / 10 / 8 (échec)",
+    "DC incliné haltères (banc 30°) — 25 kg : 10 / 8 / 8, puis 22,5 kg : 8",
+    "Écartés poulie basse — 30 lb (≈13,6 kg) : série 1 = 12 reps (séries 2-4 à 30 lb, reps non notées)",
+    "Pompes tempo 3-1, sans charge : 8 / 8 / 8",
+    "Élévations latérales poulie 20 lb (≈9 kg) + oiseau haltères 6 kg — 4 supersets (reps non notées)",
+    "Dips (buste droit) : 16 / 20 / 14",
+    "Extension triceps corde — 60 lb ×12 ; 60 lb ×6 + 50 lb ×6 ; 50 lb ×10 + 40 lb ×2 ; 40 lb ×12"
+  ],
+  notes: "Plat à 32 kg : 3×10 + 8, pas encore validé à 4×10. Incliné fait après le plat (pecs fatigués), épaule droite bien sentie. Pompes lestées remplacées par pompes tempo (pas de charge dispo, gilet lesté à la maison). Extensions triceps fatigués après les dips."
+}; // séance B 2026-10-26 à insérer
 
 // ── PLANNING SEMAINE ──────────────────────────────────────────────────────────
 const WEEK_PLAN = [
