@@ -358,13 +358,13 @@ const PENDING_IMPORT = {
 
 // ── PLANNING SEMAINE ──────────────────────────────────────────────────────────
 const WEEK_PLAN = [
-  { day: 'Lun', badge: 'b',      label: 'Séance B',   note: 'repos taf' },
+  { day: 'Lun', badge: 'cardio', label: 'Fractionné', note: 'repos taf · piste' },
   { day: 'Mar', badge: 'repos',  label: 'Repos',      note: 'cohésion' },
-  { day: 'Mer', badge: 'a',      label: 'Séance A',   note: '' },
-  { day: 'Jeu', badge: 'boxe',   label: 'Boxe',       note: 'soir, solo' },
-  { day: 'Ven', badge: 'repos',  label: 'Repos',      note: 'nuit 22h-4h' },
-  { day: 'Sam', badge: 'cardio', label: 'Fractionné', note: 'après-midi · nuit' },
-  { day: 'Dim', badge: 'b',      label: 'Séance B',   note: 'après-midi · nuit' },
+  { day: 'Mer', badge: 'b',      label: 'Séance B',   note: '' },
+  { day: 'Jeu', badge: 'a',      label: 'Séance A',   note: 'le soir' },
+  { day: 'Ven', badge: 'boxe',   label: 'Boxe',       note: 'solo · avant nuit' },
+  { day: 'Sam', badge: 'b',      label: 'Séance B',   note: 'après-midi · nuit' },
+  { day: 'Dim', badge: 'a',      label: 'Séance A',   note: 'après-midi · nuit' },
 ];
 
 function fmtDate(iso) { const [y,m,d]=iso.split('-'); return d+'/'+m+'/'+y; }
